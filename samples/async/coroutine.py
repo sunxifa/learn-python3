@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 def consumer():
     r = ''
     while True:
@@ -9,6 +10,7 @@ def consumer():
             return
         print('[CONSUMER] Consuming %s...' % n)
         r = '200 OK'
+
 
 def produce(c):
     c.send(None)
@@ -20,5 +22,7 @@ def produce(c):
         print('[PRODUCER] Consumer return: %s' % r)
     c.close()
 
+
 c = consumer()
+print(next(c))
 produce(c)

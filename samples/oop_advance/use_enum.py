@@ -3,6 +3,7 @@
 
 from enum import Enum, unique
 
+
 @unique
 class Weekday(Enum):
     Sun = 0
@@ -12,6 +13,7 @@ class Weekday(Enum):
     Thu = 4
     Fri = 5
     Sat = 6
+
 
 day1 = Weekday.Mon
 

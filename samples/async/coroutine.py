@@ -24,5 +24,5 @@ def produce(c):
 
 
 c = consumer()
-print(next(c))
+# print(next(c))
 produce(c)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf - 8 - *-
 
 from io import StringIO
 
@@ -11,7 +11,8 @@ f.write('world!')
 print(f.getvalue())
 
 # read from StringIO:
-f = StringIO('水面细风生，\n菱歌慢慢声。\n客亭临小市，\n灯火夜妆明。')
+# f = StringIO('水面细风生，\n菱歌慢慢声。\n客亭临小市，\n灯火夜妆明。')
+f = StringIO('Hello!\nHi!\nGoodbye!')
 while True:
     s = f.readline()
     if s == '':

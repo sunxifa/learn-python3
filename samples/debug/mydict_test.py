@@ -5,6 +5,7 @@ import unittest
 
 from mydict import Dict
 
+
 class TestDict(unittest.TestCase):
 
     def test_init(self):
@@ -34,6 +35,6 @@ class TestDict(unittest.TestCase):
         with self.assertRaises(AttributeError):
             value = d.empty
 
+
 if __name__ == '__main__':
     unittest.main()
-

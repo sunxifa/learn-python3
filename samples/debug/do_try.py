@@ -7,6 +7,7 @@ try:
     print('result:', r)
 except ZeroDivisionError as e:
     print('except:', e)
+    # raise
 finally:
     print('finally...')
 print('END')

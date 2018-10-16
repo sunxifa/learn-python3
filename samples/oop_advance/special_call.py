@@ -12,3 +12,4 @@ class Student(object):
 
 s = Student('Michael')
 s()
+print(callable(s))

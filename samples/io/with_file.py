@@ -4,10 +4,10 @@
 from datetime import datetime
 
 with open('test.txt', 'w') as f:
-    f.write('今天是 ')
+    # f.write('今天是 ')
     f.write(datetime.now().strftime('%Y-%m-%d'))
 
-with open('test.txt', 'r') as f:
+with open('test.txt', 'r', errors='ignore') as f:
     s = f.read()
     print('open for read...')
     print(s)
